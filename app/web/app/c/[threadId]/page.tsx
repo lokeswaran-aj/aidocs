@@ -1,10 +1,10 @@
 import { getThread } from '@/actions/thread'
 
-type Props = { params: Promise<{ thread_id: string }> }
+type Props = { params: Promise<{ threadId: string }> }
 
 const ThreadPage = async (props: Props) => {
-  const thread_id = (await props.params).thread_id
-  const thread = await getThread(thread_id)
+  const threadId = (await props.params).threadId
+  const thread = await getThread(threadId)
   return <div>{JSON.stringify(thread)}</div>
 }
 
