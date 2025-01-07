@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Backend for AI-powered RAG application to answer questions about the techonology documents",
+  "scripts": {},
+  "keywords": [
+    "aidocs",
+    "rag",
+    "ai",
+    "documentation"
+  ],
+  "author": "Lokeswaran Aruljothy",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
