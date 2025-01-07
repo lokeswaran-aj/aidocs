@@ -1,0 +1,2 @@
+export const LLM_TEMPERATURE = 0.0
+export const TOP_K_EMBEDDING_TO_BE_RETRIEVED = 3
