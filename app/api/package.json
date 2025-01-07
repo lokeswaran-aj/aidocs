@@ -2,6 +2,7 @@
   "name": "api",
   "version": "0.0.1",
   "description": "Backend for AI-powered RAG application to answer questions about the techonology documents",
+  "type": "module",
   "scripts": {},
   "keywords": [
     "aidocs",
@@ -12,6 +13,16 @@
   "author": "Lokeswaran Aruljothy",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.10.5",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.22",
+    "@langchain/core": "^0.3.27",
+    "@langchain/langgraph": "^0.2.39",
+    "@langchain/openai": "^0.3.16",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.10",
+    "pg": "^8.13.1"
   }
 }
