@@ -1,5 +1,6 @@
 export const configuration = {
-  langgraphApiUrl: process.env.LANGGRAPH_API_URL || 'http://localhost:8001',
+  langgraphApiUrl:
+    process.env.NEXT_PUBLIC_LANGGRAPH_API_URL || 'http://localhost:8001',
   langgraphId: 'agent',
   assistantName: 'assistant',
 }
