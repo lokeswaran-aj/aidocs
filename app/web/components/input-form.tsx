@@ -51,7 +51,7 @@ export const InputForm = () => {
           onKeyDown={handleKeyDown}
           onChange={(v) => setInput(v)}
           value={input}
-          placeholder="Enter a message"
+          placeholder="What is server actions in nextjs?"
           className="p-2 focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-lg transition-shadow duration-200"
         />
         <Button type="submit">
