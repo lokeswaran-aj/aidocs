@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    image: aidocs-api
+    ports:
+      - '8000:8000'
+    env_file:
+      - ./app/api/.env
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8000/ok']
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+  web:
+    image: aidocs-web
+    ports:
+      - '3000:3000'
+    environment:
+      - NEXT_PUBLIC_LANGGRAPH_API_URL=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
