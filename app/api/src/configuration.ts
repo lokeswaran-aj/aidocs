@@ -16,6 +16,7 @@ export const configuration = {
       host: process.env.DATABASE_HOST || 'localhost',
       port: Number(process.env.DATABASE_PORT) || 5432,
       database: process.env.DATABASE_NAME || 'aidocs',
+      ssl: true,
     },
     dimensions: 1536,
     tableName: 'langchain_pg_embedding',
