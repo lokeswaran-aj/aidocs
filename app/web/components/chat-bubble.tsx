@@ -1,4 +1,5 @@
 import { Message } from '@/types/message'
+import { Markdown } from './markdown'
 
 type Props = {
   message: Message
@@ -20,7 +21,7 @@ export const ChatBubble = (props: Props) => {
             : 'bg-gray-200 text-black'
         }`}
       >
-        {message.content}
+        <Markdown>{message.content as string}</Markdown>
       </div>
     </div>
   )
