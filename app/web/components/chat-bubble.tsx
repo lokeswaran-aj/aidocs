@@ -17,8 +17,8 @@ export const ChatBubble = (props: Props) => {
       <div
         className={`inline-block p-2 rounded-lg ${
           message.role === 'human'
-            ? 'bg-blue-500 text-white'
-            : 'bg-gray-200 text-black'
+            ? 'bg-blue-500 text-white rounded-tr-none'
+            : 'bg-gray-200 text-black rounded-tl-none'
         }`}
       >
         <Markdown>{message.content as string}</Markdown>
