@@ -1,7 +1,7 @@
 {
   "name": "web",
   "description": "Frontend for AI-powered RAG application to answer questions about the techonology documents",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
