@@ -26,7 +26,7 @@ export function AutoResizeTextarea({
     const textarea = textareaRef.current
     if (textarea) {
       textarea.style.height = 'auto'
-      textarea.style.height = `${textarea.scrollHeight}px`
+      textarea.style.height = `${Math.min(textarea.scrollHeight, 200)}px`
     }
   }
 
@@ -44,7 +44,11 @@ export function AutoResizeTextarea({
         onChange(e.target.value)
         resizeTextarea()
       }}
-      className={cn('resize-none min-h-4 max-h-24', className)}
+      className={cn(
+        'resize-none min-h-[40px] max-h-[200px] sm:min-h-[44px]',
+        'py-2 px-3 sm:py-3 sm:px-4',
+        className
+      )}
     />
   )
 }

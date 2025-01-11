@@ -41,9 +41,9 @@ export const InputForm = () => {
     }
   }
   return (
-    <div className="w-full flex justify-center sticky bottom-4">
+    <div className="w-full flex justify-center fixed bottom-0 left-0 bg-background/80 backdrop-blur-sm border-t p-2 sm:static sm:border-0">
       <form
-        className="flex space-x-2 mb-4 w-full max-w-2xl"
+        className="flex space-x-2 items-center w-full max-w-2xl"
         action={handleSubmit}
       >
         <AutoResizeTextarea
@@ -54,7 +54,7 @@ export const InputForm = () => {
           placeholder="What is server actions in nextjs?"
           className="p-2 focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-lg transition-shadow duration-200"
         />
-        <Button type="submit">
+        <Button type="submit" className="shrink-0 sm:w-12 sm:h-12 h-10 w-10">
           <Send className="h-4 w-4" />
         </Button>
       </form>

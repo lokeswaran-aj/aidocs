@@ -8,7 +8,7 @@ import { ScrollArea } from './ui/scroll-area'
 export const Chat = () => {
   const { messages } = useMessageStore()
   return (
-    <>
+    <div className="flex-1 overflow-y-auto pb-[calc(3rem)] sm:pb-0 flex flex-col">
       {messages.length === 0 ? (
         <ChatMessagePlaceholder />
       ) : (
@@ -26,6 +26,6 @@ export const Chat = () => {
           </ScrollArea>
         </>
       )}
-    </>
+    </div>
   )
 }

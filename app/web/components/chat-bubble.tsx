@@ -24,7 +24,7 @@ export const ChatBubble = (props: Props) => {
             alt="AI Assistant"
             width={40}
             height={40}
-            className="select-none relative p-0.5 sm:p-1.5 mt-1 sm:mt-0 rounded-full flex items-center justify-center w-5 h-5 sm:w-10 sm:h-10"
+            className="select-none relative p-0.5 sm:p-1.5 mt-1.5 sm:mt-0 rounded-full flex items-center justify-center w-5 h-5 sm:w-10 sm:h-10"
           />
         )}
         <div
