@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Backend for AI-powered RAG application to answer questions about the techonology documents",
   "type": "module",
   "scripts": {},
