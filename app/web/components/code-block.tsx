@@ -39,7 +39,7 @@ export const CodeBlock = ({
 
   return (
     <div className="not-prose flex flex-col my-1">
-      <div className="bg-[#282c34] text-sm font-mono text-zinc-100 font-medium px-4 py-2 rounded-t-xl border border-b-0 border-zinc-700 flex justify-between items-center">
+      <div className="bg-[#282c34] text-sm font-mono text-zinc-100 font-medium px-4 py-2 rounded-t-xl border border-b-0 border-zinc-700 flex justify-between items-center max-w-[calc(100vw-4rem)]">
         <span>{language}</span>
         <button
           onClick={handleCopy}
@@ -56,7 +56,7 @@ export const CodeBlock = ({
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
             {...props}
-            className="text-sm w-full overflow-x-auto bg-[#111] p-4 border border-zinc-700 rounded-b-xl max-w-[calc(100vw-3rem)]"
+            className="text-sm w-full overflow-x-auto bg-[#111] p-4 border border-zinc-700 rounded-b-xl max-w-[calc(100vw-4rem)]"
           >
             <code className="inline-block min-w-full">
               {tokens.map((line, i) => (
