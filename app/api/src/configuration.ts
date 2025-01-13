@@ -18,7 +18,7 @@ export const configuration = {
       database: process.env.DATABASE_NAME || 'aidocs',
       ssl: true,
     },
-    dimensions: 1536,
+    dimensions: 3072,
     tableName: 'langchain_pg_embedding',
     collectionTableName: 'langchain_pg_collection',
     collectionName: 'nextjs',
