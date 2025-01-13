@@ -10,10 +10,6 @@ frontend:
       commands:
         - pnpm run build
   artifacts:
-    baseDirectory: app/web/.next
+    baseDirectory: .next
     files:
       - '**/*'
-  cache:
-    paths:
-      - app/web/node_modules/**/*
-      - app/web/.next/cache/**/*
