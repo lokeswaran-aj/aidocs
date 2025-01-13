@@ -1,9 +1,9 @@
 version: 1
 frontend:
+  buildPath: app/web
   phases:
     preBuild:
       commands:
-        - cd app/web
         - npm install -g pnpm
         - pnpm install
     build:
@@ -15,5 +15,5 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
-      - .next/cache/**/*
+      - app/web/node_modules/**/*
+      - app/web/.next/cache/**/*
